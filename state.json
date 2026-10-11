@@ -1,0 +1,1451 @@
+{
+ "state-json": 2,
+ "generated": "2026-10-11T13:12:15Z",
+ "dashboard": "0.10.0",
+ "linter": "0.20.1.0",
+ "project": {
+  "id": "Shrub24---nix-fleet",
+  "name": "shrub24-nix-fleet",
+  "context": "context/",
+  "schema": "0.20.1",
+  "config": {
+   "id": "Shrub24---nix-fleet",
+   "canonical": "https://github.com/Shrub24/nix-fleet",
+   "context": "`context/`",
+   "init": "complete",
+   "context-schema": "0.20.1",
+   "capture-confirmation": "confirm-when-unsure",
+   "source-reference": "never"
+  },
+  "personal_defaults": {},
+  "config_file": ".keep-the-why",
+  "canonical": "https://github.com/Shrub24/nix-fleet",
+  "root": "",
+  "parent": "",
+  "dashboard_state": "",
+  "children": [],
+  "git": {
+   "available": true,
+   "head": "12b9b39",
+   "head_full": "12b9b39318381d5ddcf55fac2b253b47eb8a9c56",
+   "branch": "keep-the-why-0.20.1",
+   "remote": "github.com/oliver-zehentleitner-aigent/nix-fleet",
+   "upstream": "github.com/Shrub24/nix-fleet",
+   "fork": {
+    "of": "github.com/Shrub24/nix-fleet",
+    "by": "upstream"
+   },
+   "project_subdir": "",
+   "shallow": false
+  }
+ },
+ "topics": [
+  {
+   "file": "check-surface-trim.md",
+   "title": "Check surface",
+   "index_line": "what a check must own, the leaf-registry decision, and the removed checks",
+   "entries": 5,
+   "refs_out": [],
+   "refs_in": [
+    "telemetry-composition.md"
+   ],
+   "status": {
+    "active": 5
+   },
+   "evidence": {
+    "confirmed": 5
+   }
+  },
+  {
+   "file": "flake-checks.md",
+   "title": "Flake checks",
+   "index_line": "fixture integration boundary, canonical policy-check architecture and named contract diagnostics",
+   "entries": 4,
+   "refs_out": [],
+   "refs_in": [],
+   "status": {
+    "superseded": 1,
+    "active": 3
+   },
+   "evidence": {
+    "confirmed": 4
+   }
+  },
+  {
+   "file": "host-telemetry.md",
+   "title": "Host telemetry",
+   "index_line": "origin identity, conservative journal correlation and the temporary rootful Podman exporter adaptation",
+   "entries": 3,
+   "refs_out": [],
+   "refs_in": [],
+   "status": {
+    "active": 3
+   },
+   "evidence": {
+    "confirmed": 3
+   }
+  },
+  {
+   "file": "notify.md",
+   "title": "Notifications",
+   "index_line": "a registration and a drop-in follow the unit they describe; contract is shared vocabulary, not a selectable capability",
+   "entries": 2,
+   "refs_out": [],
+   "refs_in": [],
+   "status": {
+    "active": 2
+   },
+   "evidence": {
+    "confirmed": 2
+   }
+  },
+  {
+   "file": "package-updates.md",
+   "title": "Package updates",
+   "index_line": "update reporting and lock ownership, refresh pull-request prerequisites, and why package staging bundles jj",
+   "entries": 6,
+   "refs_out": [],
+   "refs_in": [],
+   "status": {
+    "active": 6
+   },
+   "evidence": {
+    "confirmed": 6
+   }
+  },
+  {
+   "file": "telemetry-composition.md",
+   "title": "Telemetry composition",
+   "index_line": "lane selection is explicit; registrations and credentials may remain dormant; routes carry their own listener and destination policy",
+   "entries": 12,
+   "refs_out": [
+    "check-surface-trim.md"
+   ],
+   "refs_in": [],
+   "status": {
+    "active": 11,
+    "superseded": 1
+   },
+   "evidence": {
+    "confirmed": 12
+   }
+  }
+ ],
+ "entries": [
+  {
+   "id": "check-surface-trim.md#a-check-earns-its-place-by-protecting-behaviour-this-repo-owns",
+   "uuid": "0b0f5d64-8c76-4a2f-9d13-2d5c0ca4f1e8",
+   "file": "check-surface-trim.md",
+   "line": 3,
+   "end_line": 35,
+   "title": "A check earns its place by protecting behaviour this repo owns",
+   "type": [
+    "decision"
+   ],
+   "status": "active",
+   "evidence": "confirmed",
+   "source": "check-surface trim, `docs/contracts/ci.md`, `AGENTS.md`, 2026-10-09",
+   "verification": null,
+   "revisit_when": null,
+   "see": [],
+   "superseded_by": null,
+   "refs": [],
+   "git": {
+    "created": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "b524d38"
+    },
+    "last_touched": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "b524d38"
+    },
+    "status_history": [
+     {
+      "status": "active",
+      "author": "author-1",
+      "date": "2026-10-09",
+      "commit": "b524d38"
+     }
+    ]
+   },
+   "findings": []
+  },
+  {
+   "id": "check-surface-trim.md#the-leaf-registry-is-gone-the-contract-map-is-the-single-source",
+   "uuid": "3d1c8a2e-5f47-4b90-a7c2-6be21f9a8d03",
+   "file": "check-surface-trim.md",
+   "line": 36,
+   "end_line": 59,
+   "title": "The leaf registry is gone; the contract map is the single source",
+   "type": [
+    "decision"
+   ],
+   "status": "active",
+   "evidence": "confirmed",
+   "source": "`modules/flake/fixture.nix`, `docs/contracts/ci.md`, 2026-10-09",
+   "verification": null,
+   "revisit_when": null,
+   "see": [],
+   "superseded_by": null,
+   "refs": [],
+   "git": {
+    "created": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "b524d38"
+    },
+    "last_touched": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "b524d38"
+    },
+    "status_history": [
+     {
+      "status": "active",
+      "author": "author-1",
+      "date": "2026-10-09",
+      "commit": "b524d38"
+     }
+    ]
+   },
+   "findings": []
+  },
+  {
+   "id": "check-surface-trim.md#removed-checks-and-what-replaces-them",
+   "uuid": "c6a41f77-9b02-4e5d-8f60-1a7bd43c92e5",
+   "file": "check-surface-trim.md",
+   "line": 60,
+   "end_line": 85,
+   "title": "Removed checks and what replaces them",
+   "type": [
+    "decision"
+   ],
+   "status": "active",
+   "evidence": "confirmed",
+   "source": "check-surface trim, 2026-10-09",
+   "verification": null,
+   "revisit_when": null,
+   "see": [],
+   "superseded_by": null,
+   "refs": [],
+   "git": {
+    "created": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "b524d38"
+    },
+    "last_touched": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "b524d38"
+    },
+    "status_history": [
+     {
+      "status": "active",
+      "author": "author-1",
+      "date": "2026-10-09",
+      "commit": "b524d38"
+     }
+    ]
+   },
+   "findings": []
+  },
+  {
+   "id": "check-surface-trim.md#a-deleted-block-can-orphan-a-binding-and-nix-fmt-enforces-the-rule",
+   "uuid": "8e27b490-1c3f-4d58-9a11-7f60cb2d5e94",
+   "file": "check-surface-trim.md",
+   "line": 86,
+   "end_line": 101,
+   "title": "A deleted block can orphan a binding, and `nix fmt` enforces the rule",
+   "type": [
+    "decision"
+   ],
+   "status": "active",
+   "evidence": "confirmed",
+   "source": "check-surface trim, `modules/flake/fixture.nix`, 2026-10-09",
+   "verification": null,
+   "revisit_when": null,
+   "see": [],
+   "superseded_by": null,
+   "refs": [],
+   "git": {
+    "created": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "b524d38"
+    },
+    "last_touched": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "78cf512"
+    },
+    "status_history": [
+     {
+      "status": "active",
+      "author": "author-1",
+      "date": "2026-10-09",
+      "commit": "b524d38"
+     }
+    ]
+   },
+   "findings": []
+  },
+  {
+   "id": "check-surface-trim.md#what-the-trim-removed-and-what-covers-each-claim",
+   "uuid": "5c81d0a4-6f27-4a5e-9b13-2e7f4c8a91b6",
+   "file": "check-surface-trim.md",
+   "line": 102,
+   "end_line": 178,
+   "title": "What the trim removed, and what covers each claim",
+   "type": [
+    "decision"
+   ],
+   "status": "active",
+   "evidence": "confirmed",
+   "source": "check-surface trim, `b524d38d` (the deletes), `c6e8a1bb` (the simplify rows), `2b393e8c` (the notify row), 2026-10-09",
+   "verification": null,
+   "revisit_when": null,
+   "see": [],
+   "superseded_by": null,
+   "refs": [],
+   "git": {
+    "created": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "78cf512"
+    },
+    "last_touched": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "78cf512"
+    },
+    "status_history": [
+     {
+      "status": "active",
+      "author": "author-1",
+      "date": "2026-10-09",
+      "commit": "78cf512"
+     }
+    ]
+   },
+   "findings": []
+  },
+  {
+   "id": "flake-checks.md#contract-evaluations-are-independent-check-leaves",
+   "uuid": "085c2d59-0fac-4d27-9336-4300140b88b0",
+   "file": "flake-checks.md",
+   "line": 3,
+   "end_line": 20,
+   "title": "Contract evaluations are independent check leaves",
+   "type": [
+    "decision"
+   ],
+   "status": "superseded",
+   "evidence": "confirmed",
+   "source": "fixture evaluation measurements at parent revision 6a9148595b56 and after the leaf split, 2026-10-08",
+   "verification": null,
+   "revisit_when": null,
+   "see": [],
+   "superseded_by": "d3c50817-8133-4dc2-90e6-2c31111a4865",
+   "refs": [],
+   "git": {
+    "created": {
+     "author": "author-1",
+     "date": "2026-10-08",
+     "commit": "28abccd"
+    },
+    "last_touched": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "e37acfb"
+    },
+    "status_history": [
+     {
+      "status": "active",
+      "author": "author-1",
+      "date": "2026-10-08",
+      "commit": "28abccd"
+     },
+     {
+      "status": "superseded",
+      "author": "author-1",
+      "date": "2026-10-09",
+      "commit": "e37acfb"
+     }
+    ]
+   },
+   "findings": []
+  },
+  {
+   "id": "flake-checks.md#canonical-architecture-for-policy-checks",
+   "uuid": "d3c50817-8133-4dc2-90e6-2c31111a4865",
+   "file": "flake-checks.md",
+   "line": 21,
+   "end_line": 39,
+   "title": "Canonical architecture for policy checks",
+   "type": [
+    "decision"
+   ],
+   "status": "active",
+   "evidence": "confirmed",
+   "source": "maintainer decision and CI workflow configuration, 2026-10-10",
+   "verification": null,
+   "revisit_when": null,
+   "see": [],
+   "superseded_by": null,
+   "refs": [],
+   "git": {
+    "created": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "e37acfb"
+    },
+    "last_touched": {
+     "author": "author-1",
+     "date": "2026-10-11",
+     "commit": "e2a8d8d"
+    },
+    "status_history": [
+     {
+      "status": "active",
+      "author": "author-1",
+      "date": "2026-10-09",
+      "commit": "e37acfb"
+     }
+    ]
+   },
+   "findings": []
+  },
+  {
+   "id": "flake-checks.md#routine-pr-ci-evaluates-fleet-ci-builds",
+   "uuid": "50eb5125-a863-46f9-b9cb-e75a30538782",
+   "file": "flake-checks.md",
+   "line": 40,
+   "end_line": 55,
+   "title": "Routine PR CI evaluates; fleet CI builds",
+   "type": [
+    "decision"
+   ],
+   "status": "active",
+   "evidence": "confirmed",
+   "source": "maintainer decision and `.github/workflows/ci.yml`, 2026-10-11",
+   "verification": null,
+   "revisit_when": null,
+   "see": [],
+   "superseded_by": null,
+   "refs": [],
+   "git": {
+    "created": {
+     "author": "author-1",
+     "date": "2026-10-11",
+     "commit": "e2a8d8d"
+    },
+    "last_touched": {
+     "author": "author-1",
+     "date": "2026-10-11",
+     "commit": "e2a8d8d"
+    },
+    "status_history": [
+     {
+      "status": "active",
+      "author": "author-1",
+      "date": "2026-10-11",
+      "commit": "e2a8d8d"
+     }
+    ]
+   },
+   "findings": []
+  },
+  {
+   "id": "flake-checks.md#named-fail-closed-errors-are-public-contract-surface",
+   "uuid": "54835555-ead9-4f93-b7cc-0c00d0c4e231",
+   "file": "flake-checks.md",
+   "line": 56,
+   "end_line": 68,
+   "title": "Named fail-closed errors are public contract surface",
+   "type": [
+    "constraint"
+   ],
+   "status": "active",
+   "evidence": "confirmed",
+   "source": "`AGENTS.md` fail-closed rule and `docs/contracts/telemetry.md` error contract, 2026-10-08",
+   "verification": null,
+   "revisit_when": null,
+   "see": [],
+   "superseded_by": null,
+   "refs": [],
+   "git": {
+    "created": {
+     "author": "author-1",
+     "date": "2026-10-08",
+     "commit": "28abccd"
+    },
+    "last_touched": {
+     "author": "author-1",
+     "date": "2026-10-08",
+     "commit": "28abccd"
+    },
+    "status_history": [
+     {
+      "status": "active",
+      "author": "author-1",
+      "date": "2026-10-08",
+      "commit": "28abccd"
+     }
+    ]
+   },
+   "findings": []
+  },
+  {
+   "id": "host-telemetry.md#canonical-identity-describes-origin-not-the-collection-endpoint",
+   "uuid": "07b04986-490c-4ad2-8918-3e7428f12c93",
+   "file": "host-telemetry.md",
+   "line": 3,
+   "end_line": 17,
+   "title": "Canonical identity describes origin, not the collection endpoint",
+   "type": [
+    "decision"
+   ],
+   "status": "active",
+   "evidence": "confirmed",
+   "source": null,
+   "verification": null,
+   "revisit_when": null,
+   "see": [],
+   "superseded_by": null,
+   "refs": [],
+   "git": {
+    "created": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "aa16262"
+    },
+    "last_touched": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "aa16262"
+    },
+    "status_history": [
+     {
+      "status": "active",
+      "author": "author-1",
+      "date": "2026-10-09",
+      "commit": "aa16262"
+     }
+    ]
+   },
+   "findings": []
+  },
+  {
+   "id": "host-telemetry.md#journal-normalization-promotes-context-without-trusting-the-whole-message",
+   "uuid": "a3b229cd-831f-4c16-b1ea-22e0cb5808a9",
+   "file": "host-telemetry.md",
+   "line": 18,
+   "end_line": 30,
+   "title": "Journal normalization promotes context without trusting the whole message",
+   "type": [
+    "decision"
+   ],
+   "status": "active",
+   "evidence": "confirmed",
+   "source": null,
+   "verification": null,
+   "revisit_when": null,
+   "see": [],
+   "superseded_by": null,
+   "refs": [],
+   "git": {
+    "created": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "aa16262"
+    },
+    "last_touched": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "aa16262"
+    },
+    "status_history": [
+     {
+      "status": "active",
+      "author": "author-1",
+      "date": "2026-10-09",
+      "commit": "aa16262"
+     }
+    ]
+   },
+   "findings": []
+  },
+  {
+   "id": "host-telemetry.md#podman-s-temporary-exporter-adaptation-uses-the-rootful-socket-deliberately",
+   "uuid": "edd366aa-2c6e-41fb-9ac9-77932c8e22b6",
+   "file": "host-telemetry.md",
+   "line": 31,
+   "end_line": 44,
+   "title": "Podman's temporary exporter adaptation uses the rootful socket deliberately",
+   "type": [
+    "workaround"
+   ],
+   "status": "active",
+   "evidence": "confirmed",
+   "source": null,
+   "verification": null,
+   "revisit_when": "the fleet's nixpkgs pin contains the merged Podman exporter package and module.",
+   "see": [],
+   "superseded_by": null,
+   "refs": [],
+   "git": {
+    "created": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "aa16262"
+    },
+    "last_touched": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "aa16262"
+    },
+    "status_history": [
+     {
+      "status": "active",
+      "author": "author-1",
+      "date": "2026-10-09",
+      "commit": "aa16262"
+     }
+    ]
+   },
+   "findings": []
+  },
+  {
+   "id": "notify.md#a-registration-and-a-drop-in-follow-the-unit-they-describe",
+   "uuid": "45ffb31d-672b-40bb-bc30-c59da49d1752",
+   "file": "notify.md",
+   "line": 3,
+   "end_line": 18,
+   "title": "A registration and a drop-in follow the unit they describe",
+   "type": [
+    "decision"
+   ],
+   "status": "active",
+   "evidence": "confirmed",
+   "source": "consumer failure migrating to `0e02a75c` (`events.fast-nix-optimise is registered but has no systemd service implementation`) and `checks.<system>.nix-gc-defaults`, 2026-10-08",
+   "verification": null,
+   "revisit_when": null,
+   "see": [],
+   "superseded_by": null,
+   "refs": [],
+   "git": {
+    "created": {
+     "author": "author-1",
+     "date": "2026-10-08",
+     "commit": "5d6bd1b"
+    },
+    "last_touched": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "fd64230"
+    },
+    "status_history": [
+     {
+      "status": "active",
+      "author": "author-1",
+      "date": "2026-10-08",
+      "commit": "5d6bd1b"
+     }
+    ]
+   },
+   "findings": []
+  },
+  {
+   "id": "notify.md#the-registration-contract-is-shared-vocabulary-not-a-capability",
+   "uuid": "75571edf-3e47-470a-bfe0-1919b1a0db0a",
+   "file": "notify.md",
+   "line": 19,
+   "end_line": 35,
+   "title": "The registration contract is shared vocabulary, not a capability",
+   "type": [
+    "decision"
+   ],
+   "status": "active",
+   "evidence": "confirmed",
+   "source": "user directive, 2026-10-08",
+   "verification": null,
+   "revisit_when": null,
+   "see": [],
+   "superseded_by": null,
+   "refs": [],
+   "git": {
+    "created": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "fd64230"
+    },
+    "last_touched": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "fd64230"
+    },
+    "status_history": [
+     {
+      "status": "active",
+      "author": "author-1",
+      "date": "2026-10-09",
+      "commit": "fd64230"
+     }
+    ]
+   },
+   "findings": []
+  },
+  {
+   "id": "package-updates.md#versions-and-changelogs-are-read-from-the-derivation-not-the-updater-s-output",
+   "uuid": "faff9539-71f2-4b3f-aef7-178d4b8e1428",
+   "file": "package-updates.md",
+   "line": 3,
+   "end_line": 30,
+   "title": "Versions and changelogs are read from the derivation, not the updater's output",
+   "type": [
+    "decision"
+   ],
+   "status": "active",
+   "evidence": "confirmed",
+   "source": "package-updates reporting, `pkgs/package-updates/src/package_updates/runner.py`, `docs/contracts/package-updates.md`, 2026-10-10",
+   "verification": null,
+   "revisit_when": null,
+   "see": [],
+   "superseded_by": null,
+   "refs": [],
+   "git": {
+    "created": {
+     "author": "author-1",
+     "date": "2026-10-10",
+     "commit": "769c010"
+    },
+    "last_touched": {
+     "author": "author-1",
+     "date": "2026-10-10",
+     "commit": "769c010"
+    },
+    "status_history": [
+     {
+      "status": "active",
+      "author": "author-1",
+      "date": "2026-10-10",
+      "commit": "769c010"
+     }
+    ]
+   },
+   "findings": []
+  },
+  {
+   "id": "package-updates.md#the-refresh-batch-owns-package-pins-renovate-owns-the-lock-file",
+   "uuid": "dcb855ef-a94d-4acf-8dbd-43a7f146b085",
+   "file": "package-updates.md",
+   "line": 31,
+   "end_line": 50,
+   "title": "The refresh batch owns package pins; renovate owns the lock file",
+   "type": [
+    "decision"
+   ],
+   "status": "active",
+   "evidence": "confirmed",
+   "source": "`docs/contracts/package-updates.md`, `.github/workflows/package-updates-refresh.yml`, 2026-10-10",
+   "verification": null,
+   "revisit_when": null,
+   "see": [],
+   "superseded_by": null,
+   "refs": [],
+   "git": {
+    "created": {
+     "author": "author-1",
+     "date": "2026-10-10",
+     "commit": "769c010"
+    },
+    "last_touched": {
+     "author": "author-1",
+     "date": "2026-10-10",
+     "commit": "769c010"
+    },
+    "status_history": [
+     {
+      "status": "active",
+      "author": "author-1",
+      "date": "2026-10-10",
+      "commit": "769c010"
+     }
+    ]
+   },
+   "findings": []
+  },
+  {
+   "id": "package-updates.md#the-report-is-written-outside-the-checkout",
+   "uuid": "96c51777-3f35-4d0c-ad89-28fe7b14deac",
+   "file": "package-updates.md",
+   "line": 51,
+   "end_line": 71,
+   "title": "The report is written outside the checkout",
+   "type": [
+    "decision"
+   ],
+   "status": "active",
+   "evidence": "confirmed",
+   "source": "`.github/workflows/package-updates-refresh.yml`, 2026-10-10",
+   "verification": null,
+   "revisit_when": null,
+   "see": [],
+   "superseded_by": null,
+   "refs": [],
+   "git": {
+    "created": {
+     "author": "author-1",
+     "date": "2026-10-10",
+     "commit": "769c010"
+    },
+    "last_touched": {
+     "author": "author-1",
+     "date": "2026-10-10",
+     "commit": "769c010"
+    },
+    "status_history": [
+     {
+      "status": "active",
+      "author": "author-1",
+      "date": "2026-10-10",
+      "commit": "769c010"
+     }
+    ]
+   },
+   "findings": []
+  },
+  {
+   "id": "package-updates.md#release-note-bodies-are-deferred-the-report-carries-a-link",
+   "uuid": "a9611135-1af2-4569-85b6-88a2bc89d9b8",
+   "file": "package-updates.md",
+   "line": 72,
+   "end_line": 91,
+   "title": "Release-note bodies are deferred; the report carries a link",
+   "type": [
+    "decision"
+   ],
+   "status": "active",
+   "evidence": "confirmed",
+   "source": "`docs/contracts/package-updates.md`, 2026-10-10",
+   "verification": null,
+   "revisit_when": "a consumer adopts the workflow and wants renovate-style note",
+   "see": [],
+   "superseded_by": null,
+   "refs": [],
+   "git": {
+    "created": {
+     "author": "author-1",
+     "date": "2026-10-10",
+     "commit": "769c010"
+    },
+    "last_touched": {
+     "author": "author-1",
+     "date": "2026-10-10",
+     "commit": "769c010"
+    },
+    "status_history": [
+     {
+      "status": "active",
+      "author": "author-1",
+      "date": "2026-10-10",
+      "commit": "769c010"
+     }
+    ]
+   },
+   "findings": []
+  },
+  {
+   "id": "package-updates.md#an-actions-created-pull-request-has-two-environment-prerequisites",
+   "uuid": "192140f2-3972-473e-ae59-d91a92c1de70",
+   "file": "package-updates.md",
+   "line": 92,
+   "end_line": 117,
+   "title": "An Actions-created pull request has two environment prerequisites",
+   "type": [
+    "constraint"
+   ],
+   "status": "active",
+   "evidence": "confirmed",
+   "source": "GitHub Actions permissions API and workflow-trigger documentation, 2026-10-10",
+   "verification": null,
+   "revisit_when": null,
+   "see": [],
+   "superseded_by": null,
+   "refs": [],
+   "git": {
+    "created": {
+     "author": "author-1",
+     "date": "2026-10-10",
+     "commit": "769c010"
+    },
+    "last_touched": {
+     "author": "author-1",
+     "date": "2026-10-10",
+     "commit": "537c3cc"
+    },
+    "status_history": [
+     {
+      "status": "active",
+      "author": "author-1",
+      "date": "2026-10-10",
+      "commit": "769c010"
+     }
+    ]
+   },
+   "findings": []
+  },
+  {
+   "id": "package-updates.md#package-staging-uses-disposable-jj-workspaces",
+   "uuid": "5597d9b3-ffed-412d-a124-943639676279",
+   "file": "package-updates.md",
+   "line": 118,
+   "end_line": 140,
+   "title": "Package staging uses disposable jj workspaces",
+   "type": [
+    "decision"
+   ],
+   "status": "active",
+   "evidence": "confirmed",
+   "source": "`docs/contracts/package-updates.md`, package-update transaction design, 2026-10-11",
+   "verification": null,
+   "revisit_when": null,
+   "see": [],
+   "superseded_by": null,
+   "refs": [],
+   "git": {
+    "created": {
+     "author": "author-1",
+     "date": "2026-10-10",
+     "commit": "537c3cc"
+    },
+    "last_touched": {
+     "author": "author-1",
+     "date": "2026-10-10",
+     "commit": "3b782a0"
+    },
+    "status_history": [
+     {
+      "status": "active",
+      "author": "author-1",
+      "date": "2026-10-10",
+      "commit": "537c3cc"
+     }
+    ]
+   },
+   "findings": []
+  },
+  {
+   "id": "telemetry-composition.md#capability-presence-is-declared-by-the-selected-lane",
+   "uuid": "4479ca81-13bc-4cdb-a729-970b6767f5d9",
+   "file": "telemetry-composition.md",
+   "line": 3,
+   "end_line": 20,
+   "title": "Capability presence is declared by the selected lane",
+   "type": [
+    "decision"
+   ],
+   "status": "active",
+   "evidence": "confirmed",
+   "source": "`openspec/changes/telemetry-capability-aspects/design.md`, decisions 4, 6 and 11, 2026-10-08",
+   "verification": null,
+   "revisit_when": null,
+   "see": [],
+   "superseded_by": null,
+   "refs": [],
+   "git": {
+    "created": {
+     "author": "author-1",
+     "date": "2026-10-08",
+     "commit": "28abccd"
+    },
+    "last_touched": {
+     "author": "author-1",
+     "date": "2026-10-08",
+     "commit": "28abccd"
+    },
+    "status_history": [
+     {
+      "status": "active",
+      "author": "author-1",
+      "date": "2026-10-08",
+      "commit": "28abccd"
+     }
+    ]
+   },
+   "findings": []
+  },
+  {
+   "id": "telemetry-composition.md#output-views-are-native-pipeline-composition-not-a-fleet-api",
+   "uuid": "3112615d-1b32-476a-9fec-1b6ae3d880b4",
+   "file": "telemetry-composition.md",
+   "line": 21,
+   "end_line": 38,
+   "title": "Output views are native pipeline composition, not a fleet API",
+   "type": [
+    "decision"
+   ],
+   "status": "active",
+   "evidence": "confirmed",
+   "source": "`openspec/changes/telemetry-output-views/design.md`, `examples/telemetry-output-views.nix`, 2026-10-09",
+   "verification": null,
+   "revisit_when": null,
+   "see": [],
+   "superseded_by": null,
+   "refs": [],
+   "git": {
+    "created": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "0cfe60f"
+    },
+    "last_touched": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "0cfe60f"
+    },
+    "status_history": [
+     {
+      "status": "active",
+      "author": "author-1",
+      "date": "2026-10-09",
+      "commit": "0cfe60f"
+     }
+    ]
+   },
+   "findings": []
+  },
+  {
+   "id": "telemetry-composition.md#the-latitude-adapter-uses-the-version-s-supported-message-carrier",
+   "uuid": "4d3f2eff-17b5-467d-b679-ae6e470bb0d5",
+   "file": "telemetry-composition.md",
+   "line": 39,
+   "end_line": 54,
+   "title": "The Latitude adapter uses the version's supported message carrier",
+   "type": [
+    "decision"
+   ],
+   "status": "active",
+   "evidence": "confirmed",
+   "source": "`openspec/changes/telemetry-output-views/tasks.md`, pinned `latitude-dev/latitude-llm` v0.3.118 (`67c577ba`), 2026-10-09",
+   "verification": null,
+   "revisit_when": null,
+   "see": [],
+   "superseded_by": null,
+   "refs": [],
+   "git": {
+    "created": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "0cfe60f"
+    },
+    "last_touched": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "25d65d0"
+    },
+    "status_history": [
+     {
+      "status": "active",
+      "author": "author-1",
+      "date": "2026-10-09",
+      "commit": "0cfe60f"
+     }
+    ]
+   },
+   "findings": []
+  },
+  {
+   "id": "telemetry-composition.md#a-regex-in-a-rendered-ottl-literal-is-escaped-at-the-render-site",
+   "uuid": "360869a3-b79f-4b0a-9f9b-cc2b392b99ae",
+   "file": "telemetry-composition.md",
+   "line": 55,
+   "end_line": 66,
+   "title": "A regex in a rendered OTTL literal is escaped at the render site",
+   "type": [
+    "workaround"
+   ],
+   "status": "active",
+   "evidence": "confirmed",
+   "source": "`examples/telemetry-output-views.nix`, 2026-10-09",
+   "verification": null,
+   "revisit_when": null,
+   "see": [],
+   "superseded_by": null,
+   "refs": [],
+   "git": {
+    "created": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "0cfe60f"
+    },
+    "last_touched": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "0cfe60f"
+    },
+    "status_history": [
+     {
+      "status": "active",
+      "author": "author-1",
+      "date": "2026-10-09",
+      "commit": "0cfe60f"
+     }
+    ]
+   },
+   "findings": []
+  },
+  {
+   "id": "telemetry-composition.md#credentials-may-bind-dormant-destinations",
+   "uuid": "cc767e32-98e7-4079-a95e-de6ff746df0b",
+   "file": "telemetry-composition.md",
+   "line": 67,
+   "end_line": 80,
+   "title": "Credentials may bind dormant destinations",
+   "type": [
+    "decision"
+   ],
+   "status": "active",
+   "evidence": "confirmed",
+   "source": "`openspec/changes/telemetry-capability-aspects/design.md`, decisions 8 and 11, 2026-10-08",
+   "verification": null,
+   "revisit_when": null,
+   "see": [],
+   "superseded_by": null,
+   "refs": [],
+   "git": {
+    "created": {
+     "author": "author-1",
+     "date": "2026-10-08",
+     "commit": "28abccd"
+    },
+    "last_touched": {
+     "author": "author-1",
+     "date": "2026-10-08",
+     "commit": "28abccd"
+    },
+    "status_history": [
+     {
+      "status": "active",
+      "author": "author-1",
+      "date": "2026-10-08",
+      "commit": "28abccd"
+     }
+    ]
+   },
+   "findings": []
+  },
+  {
+   "id": "telemetry-composition.md#a-route-is-a-listener-bound-stream-with-its-own-destination-policy",
+   "uuid": "77b08223-5f02-42a5-9b06-67ae2b40814a",
+   "file": "telemetry-composition.md",
+   "line": 81,
+   "end_line": 95,
+   "title": "A route is a listener-bound stream with its own destination policy",
+   "type": [
+    "decision"
+   ],
+   "status": "active",
+   "evidence": "confirmed",
+   "source": "`openspec/changes/telemetry-stream-routing/design.md`, 2026-10-08",
+   "verification": null,
+   "revisit_when": null,
+   "see": [],
+   "superseded_by": null,
+   "refs": [],
+   "git": {
+    "created": {
+     "author": "author-1",
+     "date": "2026-10-08",
+     "commit": "fb5ac7e"
+    },
+    "last_touched": {
+     "author": "author-1",
+     "date": "2026-10-08",
+     "commit": "fb5ac7e"
+    },
+    "status_history": [
+     {
+      "status": "active",
+      "author": "author-1",
+      "date": "2026-10-08",
+      "commit": "fb5ac7e"
+     }
+    ]
+   },
+   "findings": []
+  },
+  {
+   "id": "telemetry-composition.md#route-isolation-is-per-exporter-instance-not-per-pipeline",
+   "uuid": "0202f481-a6aa-4ac3-a7c7-994f57801382",
+   "file": "telemetry-composition.md",
+   "line": 96,
+   "end_line": 108,
+   "title": "Route isolation is per exporter instance, not per pipeline",
+   "type": [
+    "decision"
+   ],
+   "status": "active",
+   "evidence": "confirmed",
+   "source": "`openspec/changes/telemetry-stream-routing/design.md`, `modules/telemetry/otel-collector.nix`, 2026-10-08",
+   "verification": null,
+   "revisit_when": null,
+   "see": [],
+   "superseded_by": null,
+   "refs": [],
+   "git": {
+    "created": {
+     "author": "author-1",
+     "date": "2026-10-08",
+     "commit": "fb5ac7e"
+    },
+    "last_touched": {
+     "author": "author-1",
+     "date": "2026-10-08",
+     "commit": "fb5ac7e"
+    },
+    "status_history": [
+     {
+      "status": "active",
+      "author": "author-1",
+      "date": "2026-10-08",
+      "commit": "fb5ac7e"
+     }
+    ]
+   },
+   "findings": []
+  },
+  {
+   "id": "telemetry-composition.md#the-route-isolation-check-runs-the-pinned-collector-against-mock-backends",
+   "uuid": "98b97ef5-dcb9-4a0a-a775-4f40ae4af5a0",
+   "file": "telemetry-composition.md",
+   "line": 109,
+   "end_line": 121,
+   "title": "The route-isolation check runs the pinned collector against mock backends",
+   "type": [
+    "decision"
+   ],
+   "status": "superseded",
+   "evidence": "confirmed",
+   "source": "`tests/telemetry/route_check.py`, `modules/flake/fixture.nix`, 2026-10-08",
+   "verification": null,
+   "revisit_when": null,
+   "see": [],
+   "superseded_by": "none — the runtime check is removed, and `tests/telemetry/route_check.py` with it. The fleet-owned half of its claim, that a route renders its own receiver, exporter and pipeline, is pinned at evaluation by the `telemetry-routes` leaf; end-to-end isolation on a running collector is an accepted gap. See `context/check-surface-trim.md`.",
+   "refs": [
+    "check-surface-trim.md"
+   ],
+   "git": {
+    "created": {
+     "author": "author-1",
+     "date": "2026-10-08",
+     "commit": "fb5ac7e"
+    },
+    "last_touched": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "b524d38"
+    },
+    "status_history": [
+     {
+      "status": "active",
+      "author": "author-1",
+      "date": "2026-10-08",
+      "commit": "fb5ac7e"
+     },
+     {
+      "status": "superseded",
+      "author": "author-1",
+      "date": "2026-10-09",
+      "commit": "b524d38"
+     }
+    ]
+   },
+   "findings": []
+  },
+  {
+   "id": "telemetry-composition.md#routing-is-not-admission",
+   "uuid": "8fd5ee58-ad30-4d8b-8e7a-e81afc636c89",
+   "file": "telemetry-composition.md",
+   "line": 122,
+   "end_line": 132,
+   "title": "Routing is not admission",
+   "type": [
+    "constraint"
+   ],
+   "status": "active",
+   "evidence": "confirmed",
+   "source": "user directive, 2026-10-08",
+   "verification": null,
+   "revisit_when": null,
+   "see": [],
+   "superseded_by": null,
+   "refs": [],
+   "git": {
+    "created": {
+     "author": "author-1",
+     "date": "2026-10-08",
+     "commit": "fb5ac7e"
+    },
+    "last_touched": {
+     "author": "author-1",
+     "date": "2026-10-08",
+     "commit": "fb5ac7e"
+    },
+    "status_history": [
+     {
+      "status": "active",
+      "author": "author-1",
+      "date": "2026-10-08",
+      "commit": "fb5ac7e"
+     }
+    ]
+   },
+   "findings": []
+  },
+  {
+   "id": "telemetry-composition.md#a-realization-owns-its-own-listener-s-health-registration",
+   "uuid": "7d9e94c8-aa8a-4411-9cd7-fdea8dd333cd",
+   "file": "telemetry-composition.md",
+   "line": 133,
+   "end_line": 143,
+   "title": "A realization owns its own listener's health registration",
+   "type": [
+    "decision"
+   ],
+   "status": "active",
+   "evidence": "confirmed",
+   "source": "feedback from a consumer migration, 2026-10-08",
+   "verification": null,
+   "revisit_when": null,
+   "see": [],
+   "superseded_by": null,
+   "refs": [],
+   "git": {
+    "created": {
+     "author": "author-1",
+     "date": "2026-10-08",
+     "commit": "fb5ac7e"
+    },
+    "last_touched": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "1110203"
+    },
+    "status_history": [
+     {
+      "status": "active",
+      "author": "author-1",
+      "date": "2026-10-08",
+      "commit": "fb5ac7e"
+     }
+    ]
+   },
+   "findings": []
+  },
+  {
+   "id": "telemetry-composition.md#the-output-view-runtime-check-keeps-only-the-artifacts-this-repo-authors",
+   "uuid": "7a2c9e51-4d38-4f6b-8e21-5c9b0a3f7d64",
+   "file": "telemetry-composition.md",
+   "line": 144,
+   "end_line": 179,
+   "title": "The output-view runtime check keeps only the artifacts this repo authors",
+   "type": [
+    "decision"
+   ],
+   "status": "active",
+   "evidence": "confirmed",
+   "source": "check-surface trim, `modules/telemetry/output-view-checks.nix`, `tests/telemetry/output_views_check.py`, 2026-10-09",
+   "verification": null,
+   "revisit_when": null,
+   "see": [],
+   "superseded_by": null,
+   "refs": [],
+   "git": {
+    "created": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "1110203"
+    },
+    "last_touched": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "1110203"
+    },
+    "status_history": [
+     {
+      "status": "active",
+      "author": "author-1",
+      "date": "2026-10-09",
+      "commit": "1110203"
+     }
+    ]
+   },
+   "findings": []
+  },
+  {
+   "id": "telemetry-composition.md#the-parser-probe-artifact-is-written-and-asserted-non-empty",
+   "uuid": "e41b7c08-9d25-4a63-b5f7-8c02d9e6143a",
+   "file": "telemetry-composition.md",
+   "line": 180,
+   "end_line": 196,
+   "title": "The parser-probe artifact is written and asserted non-empty",
+   "type": [
+    "decision"
+   ],
+   "status": "active",
+   "evidence": "confirmed",
+   "source": "check-surface trim, `tests/telemetry/output_views_check.py`, 2026-10-09",
+   "verification": null,
+   "revisit_when": null,
+   "see": [],
+   "superseded_by": null,
+   "refs": [],
+   "git": {
+    "created": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "1110203"
+    },
+    "last_touched": {
+     "author": "author-1",
+     "date": "2026-10-09",
+     "commit": "1110203"
+    },
+    "status_history": [
+     {
+      "status": "active",
+      "author": "author-1",
+      "date": "2026-10-09",
+      "commit": "1110203"
+     }
+    ]
+   },
+   "findings": []
+  }
+ ],
+ "authors": [
+  {
+   "name": "author-1",
+   "created": 32,
+   "touched": 32,
+   "superseded": 2,
+   "first": "2026-10-08",
+   "last": "2026-10-11",
+   "evidence": {
+    "confirmed": 32
+   }
+  }
+ ],
+ "anonymized": true,
+ "findings": {
+  "errors": 0,
+  "warnings": 0,
+  "items": []
+ },
+ "exported": true,
+ "bodies": "state.body.json"
+}
